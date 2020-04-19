@@ -1,5 +1,5 @@
 - I want to implement bootstrap on the navbar only and not globally (view comments in navbar.component.html, lines 6 and 24)
-- I need to figure out routing from Open an Account button in navbar component to open-account component template html (done?)
+- I really want to fix the image background in the HomeComponent. 
 
 Changes I made to make the home component the first page to load instead of the shell component.
     - In the app-routing.module.ts I added { path: '', component: HomeComponent } to the routes variable

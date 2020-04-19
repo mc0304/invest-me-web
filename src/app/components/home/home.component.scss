@@ -1,0 +1,29 @@
+body, html {
+  height: 100%;
+}
+
+.hero {
+  background-image: url('/assets/img/trading.jpg');
+  height: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  color: white;
+}
+p {
+  color: white;
+}
+.leftbox { 
+  float:left;
+  // border: 1px solid black;
+  width: 49%;
+} 
+.rightbox{ 
+  float:right; 
+  // border: 1px solid black;
+  width: 49%;
+  
+}
+

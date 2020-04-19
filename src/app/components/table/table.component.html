@@ -1,0 +1,68 @@
+<div>
+    <h2 style="text-align:center">Cumulative Performance</h2>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Return Type Column -->
+        <ng-container matColumnDef="returnType">
+            <th mat-header-cell *matHeaderCellDef>  </th>
+            <td mat-cell *matCellDef="let element"> {{element.returnType}} </td>
+        </ng-container>
+
+        <!-- YTD Column -->
+        <ng-container matColumnDef="ytd">
+            <th mat-header-cell *matHeaderCellDef> YTD </th>
+            <td mat-cell *matCellDef="let element"> {{element.ytd}} </td>
+        </ng-container>
+
+        <!-- 1m Column -->
+        <ng-container matColumnDef="oneMonth">
+            <th mat-header-cell *matHeaderCellDef> 1m </th>
+            <td mat-cell *matCellDef="let element"> {{element.oneMonth}} </td>
+        </ng-container>
+
+        <!-- 3m Column -->
+        <ng-container matColumnDef="threeMonths">
+            <th mat-header-cell *matHeaderCellDef> 3m </th>
+            <td mat-cell *matCellDef="let element"> {{element.threeMonths}} </td>
+        </ng-container>
+
+        <!-- 1y Column -->
+        <ng-container matColumnDef="oneYear">
+            <th mat-header-cell *matHeaderCellDef> 1y </th>
+            <td mat-cell *matCellDef="let element"> {{element.oneYear}} </td>
+        </ng-container>
+
+        <!-- 3y Column -->
+        <ng-container matColumnDef="threeYears">
+            <th mat-header-cell *matHeaderCellDef> 3y </th>
+            <td mat-cell *matCellDef="let element"> {{element.threeYears}} </td>
+        </ng-container>
+
+        <!-- 5y Column -->
+        <ng-container matColumnDef="fiveYears">
+            <th mat-header-cell *matHeaderCellDef> 5y </th>
+            <td mat-cell *matCellDef="let element"> {{element.fiveYears}} </td>
+        </ng-container>
+
+        <!-- 10y Column -->
+        <ng-container matColumnDef="tenYears">
+            <th mat-header-cell *matHeaderCellDef> 10y </th>
+            <td mat-cell *matCellDef="let element"> {{element.tenYears}} </td>
+        </ng-container>
+
+        <!-- Inception Column -->
+        <ng-container matColumnDef="inception">
+            <th mat-header-cell *matHeaderCellDef> Inception </th>
+            <td mat-cell *matCellDef="let element"> {{element.inception}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>
+  
+  
