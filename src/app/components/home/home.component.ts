@@ -10,18 +10,18 @@ import { TDAmeritradeService } from 'src/app/services/TDAmeritradeService';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  title='Invest Me';
+  title = 'Invest Me';
 
   tdResponse: TDAmeritradeResponse;
   // users: any;
 
-  constructor(private tDAmeritradeService:TDAmeritradeService) { }
+  constructor(private tDAmeritradeService: TDAmeritradeService) { }
 
   ngOnInit() {
 
 
     this.tDAmeritradeService.getTDAccount()
-      .subscribe((data: TDAmeritradeResponse) => this.tdResponse = { ...data })
+      .subscribe((data: TDAmeritradeResponse) => this.tdResponse = { ...data });
 
 
     // let resp1 = this.http.get("http://localhost:8080/invest-me-app/api/v1/td/getaccounts");
@@ -34,12 +34,12 @@ export class HomeComponent implements OnInit {
     // request.get('http://localhost:8080/invest-me-app/api/v1/td/getaccounts' , (error: any, response: any, body: any) => {
     //   let tdResponse = new TDAmeritradeResponse(body);
     //   console.log(tdResponse);
-    // })   
+    // })
 
     // let resp3 = this.http.get("https://jsonplaceholder.typicode.com/users");
     // resp3.subscribe((data)=>this.users=data);
-    
-  
+
+
   }
 
 

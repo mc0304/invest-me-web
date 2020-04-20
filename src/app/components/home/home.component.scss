@@ -24,6 +24,22 @@ p {
   float:right; 
   // border: 1px solid black;
   width: 49%;
-  
+}
+.header-nav-label {
+  color: white;
+  font-size: small
+}
+.header-nav-data {
+  color: white;
+  font-size: large;
+}
+.fiftyTwoWeekData {
+  color: white;
+  font-size: small
+}
+.fundHeaderTabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 

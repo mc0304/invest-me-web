@@ -13,8 +13,10 @@ export interface Performance {
 }
 
 const ELEMENT_DATA: Performance[] = [
-  {returnType: 'Total Return (%)', ytd: 10, oneMonth: 10, threeMonths: 10, oneYear: 10, threeYears: 10, fiveYears: 10, tenYears:10, inception: 10},
-  {returnType: 'Benchmark (%)', ytd: 10, oneMonth: 10, threeMonths: 10, oneYear: 10, threeYears: 10, fiveYears: 10, tenYears:10, inception: 10},
+  // tslint:disable-next-line:max-line-length
+  {returnType: 'Total Return (%) as of April 13, 2020', ytd: 10, oneMonth: 10, threeMonths: 10, oneYear: 10, threeYears: 10, fiveYears: 10, tenYears: 10, inception: 31.10},
+  // tslint:disable-next-line:max-line-length
+  {returnType: 'Benchmark (%) as of April 13 2020', ytd: 10, oneMonth: 10, threeMonths: 10, oneYear: 10, threeYears: 10, fiveYears: 10, tenYears: 10, inception: 10},
 ];
 
 @Component({
@@ -23,6 +25,7 @@ const ELEMENT_DATA: Performance[] = [
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
+  // tslint:disable-next-line:max-line-length
   displayedColumns: string[] = ['returnType', 'ytd', 'oneMonth', 'threeMonths', 'oneYear', 'threeYears', 'fiveYears', 'tenYears', 'inception'];
   dataSource = ELEMENT_DATA;
 
