@@ -25,7 +25,7 @@ p {
   // border: 1px solid black;
   width: 49%;
 }
-.header-nav-label {
+.header-nav-label-navAmount {
   color: white;
   font-size: small
 }
@@ -37,9 +37,31 @@ p {
   color: white;
   font-size: small
 }
-.fundHeaderTabs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// .fundHeaderTabs {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+.header-nav-label-navAmountChange {
+  color: white;
+  font-size: small
+}
+.header-nav-label-yearToDateCalc {
+  color: white;
+  font-size: small
+}
+.ytd-data {
+  color: white;
+  font-size: x-large;
+}
+ul#horizontal-list {
+  list-style-type: none;
+  }
+  ul#horizontal-list li {
+    display: inline;
+  }
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
 }
 
